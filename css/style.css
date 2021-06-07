@@ -102,6 +102,9 @@ header .container i {
   display: none;
 }
 @media (max-width: 767px) {
+  header .logo img {
+    padding-left: 13px;
+  }
   header .container nav{
     display: none;
   }
@@ -109,7 +112,6 @@ header .container i {
     display: inherit;
   }
 }
-
 /* End Header */
 /* Start Landing */
 .landing {
