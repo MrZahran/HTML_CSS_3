@@ -196,9 +196,17 @@ header .container i {
     color: white;
     width: 100%;
   }
+  .landing .container .img .text h2 {
+    margin-bottom: 90px;
+    font-size: 36px;
+  }
+  .landing .container .img .text p {
+    display: none;
+  }
   .landing .main-text a {
     color: white;
     border: 1px solid white;
+    margin-top: 20px;
   }
 }
 /* End Landing */
