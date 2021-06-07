@@ -1,0 +1,297 @@
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cinzel Decorative', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* End Global Rules */
+/* Start Comp */
+.main-text p {
+  line-height: 1.7;
+  padding: 15px 0 30px;
+}
+.main-text span {
+  font-weight: bold;
+}
+.main-text a {
+  border: 1px solid black;
+  padding: 10px 30px;
+  color: black;
+}
+.main-text a:hover {
+  background-color: #777777;
+  color: white;
+  transition: 0.3s ease;
+}
+/* End Comp */
+/* Start Container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* End Container */
+/* Start Header */
+header {
+  background-color: black;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+header img {
+  width: 122px;
+}
+header .container nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .container nav ul li {
+  padding-left: 18px;
+}
+header .container nav ul li a {
+  color: #8f8f8f;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+header .container nav ul li a:hover {
+  color: white;
+}
+header .container i {
+  color: white;
+  padding-right: 15px;
+  font-size: 20px;
+  display: none;
+}
+@media (max-width: 767px) {
+  header .container nav{
+    display: none;
+  }
+  header .container i {
+    display: inherit;
+  }
+}
+
+/* End Header */
+/* Start Landing */
+.landing {
+  height: 60vh;
+  background-image: url(../images/Office-Plants-1.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  background-color: #8f8f8f;
+  position: relative;
+}
+.landing::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 43% );
+}
+.landing .icon-text {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  display: flex;
+  align-items: flex-end;
+}
+.landing .icons {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 21px 6px;
+  margin-bottom: 10px;
+  width: 28px;
+}
+.landing .hash-text span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background-color: white;
+  position: absolute;
+  padding: 14px 3px;
+}
+.landing .icons i {
+  padding: 5px 0;
+}
+.landing .container .img {
+  background-image: url(../images/land2.jpg);
+  background-size: cover;
+  position: relative;
+  height: 45vh;
+  top: 37vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.landing .container .img .text {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  padding-right: 25px;
+}
+@media (max-width: 767px) {
+  .landing .container .img {
+    top: 7vh;
+  }
+}
+@media (max-width: 991px) {
+  .landing .icon-text {
+    display: none;
+  }
+  .landing .container .img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60% );
+  }
+  .landing .container .img .text {
+    text-align: center;
+    padding: 0 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+  }
+  .landing .main-text a {
+    color: white;
+    border: 1px solid white;
+  }
+}
+/* End Landing */
+/* Start Solution Section */
+.solution {
+  padding-top: 300px;
+}
+.solution .container {
+  display: flex;
+  align-items: center;
+}
+.solution .img-solution img {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .solution {
+    padding-top: 60px;
+  }
+  .solution .container {
+    flex-direction: column-reverse;
+  }
+  .solution .img-solution img {
+    padding-bottom: 20px;
+  }
+}
+/* End Solution Section */
+/* Start Contact */
+.contact {
+  background-image: url(../images/plants.jpg);
+  position: relative;
+  background-size: cover;
+  padding: 140px 0;
+  margin-top: 70px;
+}
+.contact::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 55% );
+}
+.contact .con-text {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.contact .con-text a {
+  color: white;
+  border: 1px solid white;
+}
+.contact .con-p {
+  padding: 15px 15px 30px;
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 111px 0;
+}
+.footer h3 {
+  margin-bottom: 17px;
+}
+.footer p {
+  padding-bottom: 7px;
+}
+.footer i {
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer h3 {
+    margin: 22px 0;
+  }
+  .footer i {
+    padding: 10px;
+  }
+}
+/* End Footer */
+/* Start Icons */
+.custom-fa:before{
+  color: black;
+}
+.fa-footer:before {
+  content: "\f16d";
+  color: white;
+  font-size: 25px;
+}
+/* End Icons */
