@@ -109,7 +109,7 @@ header .container i {
     display: none;
   }
   header .container i {
-    display: inherit;
+    display: inline;
   }
 }
 /* End Header */
@@ -199,7 +199,7 @@ header .container i {
     width: 100%;
   }
   .landing .container .img .text h2 {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     font-size: 36px;
   }
   .landing .container .img .text p {
