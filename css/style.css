@@ -230,6 +230,9 @@ header .container i {
   .solution .container {
     flex-direction: column-reverse;
   }
+  .solution .text {
+    text-align: center;
+  }
   .solution .img-solution img {
     padding-bottom: 20px;
   }
