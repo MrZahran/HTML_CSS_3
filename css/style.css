@@ -272,8 +272,10 @@ header .container i {
 .footer {
   background-color: black;
   color: white;
+}
+.footer .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 111px 0;
 }
 .footer h3 {
@@ -286,7 +288,7 @@ header .container i {
   padding-right: 15px;
 }
 @media (max-width: 767px) {
-  .footer {
+  .footer .container {
     flex-direction: column;
     text-align: center;
   }
